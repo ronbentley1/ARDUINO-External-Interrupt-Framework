@@ -1,4 +1,5 @@
 (User Guide) Introduction
+
 This document presents an asynchronous method for a scalable framework for applications requiring the use of external interrupts for ARDUINO microcontrollers (or compatible alternatives, e.g. Elegoo).  
 
 The method will allow external interrupts to be processed in their order of priority (when triggered concurrently and in real time), but at such time that the main processing code dictates (asynchronously).  That is, the method allows for external interrupts to be captured, as triggered, but actioned outside and away from their associated Interrupt Service Routines (ISRs).
