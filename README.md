@@ -1,5 +1,5 @@
 # ARDUINO-Interrupt-Framework
-A repository for haolding end users code and guides for implementing ARDUINO Interrupt Framework
+A repository for holding end users code and guides for implementing ARDUINO Interrupt Framework
 
  * This is a framework that can be used to manage and process any number of external
  * interrupts, from 1 up to the maximum number supported by the ARDUINO microcontroller.
