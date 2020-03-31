@@ -29,4 +29,4 @@ This interrupt framework is intended for use by anyone with an interest in ARDUI
 
 It is essential for a successful implementation of this framework that due regard and is time spent analysing the specific requirements for external interrupts and then to configure the framework suitably. 
 
-
+See https://github.com/ronbentley1/ARDUINO-Interrupt-Framework/blob/master/ARDUINO%20Interrupt%20Handling%20v2-03-1-D.pdf
