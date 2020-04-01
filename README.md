@@ -1,5 +1,5 @@
 
-Copyright (c) 
+Copyright (c) Ron D Bentley (UK)
 
 The extent this licence shall be limited to Non-profit Use.
 
