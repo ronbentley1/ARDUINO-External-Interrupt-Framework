@@ -1,23 +1,34 @@
-/* Interrupt Queue Framwork, Ron D Bentley (Stafford UK)
+/* (External) Interrupt Queue Framwork, Ron D Bentley (Stafford UK)
+ * ____________________________________________________________________________________________________
+ * Copyright (c) Ron D Bentley (UK)
+ * The extent this licence shall be limited to Non-profit Use.
+ * Permission is hereby granted, free of charge, for non-profit purposes to any person obtaining
+ * a copy of this software and associated documentation files (the "Software"), to deal in the 
+ * Software without restriction, including without limitation the rights to use, copy, modify, merge, 
+ * publish, distribute, sublicense copies of the Software, and to permit persons to whom the Software 
+ * is furnished to do so, subject to the following conditions:
  * 
+ * The above copyright notice, acknowledgements and this permission notice shall be included in all 
+ * copies or substantial portions of the Software. 
  * 
- * ©  Copyright of this software is held by the author, R D Bentley.  
- * This software may not may not be reproduced/used, in part or in whole, 
- * for commercial purposes without the express permission of the copyright owner.
- * This framework is in the public domain and may be used for non-commercial pursposes,
- * with acknowledegments to the the author.
+ * THE SOFTWARE IS LIMITED TO NON-PROFIT USE AND IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR 
+ * A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+ * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ * ____________________________________________________________________________________________________
  * 
- * 
- * 
- * Version History    _____________________________________________________________________________________________
+ * Version History    _________________________________________________________________________________
  *
  * 4 Mar  2020:v2.03  Efficiency improvements regarding scanning IQ for existing unique interrupts.  New                    
  *                    approach no longer scans chain, but uses binary flags, one for each generic interrupt.
- *                    These are set/cleared only if a generic interrupt handler is configured for unique interrupts.
- *                    Note, the bit set/cleared refers to the number of the generic interrupt handler and not
- *                    the actual linked interrupt that triggered on the assigned generic handler.
- *  1 Mar  2020:v2.02 Introduced concept of 'generic' interrupt ISRs to delink actual dgital interrupts pins                  
- *                    from a particular ISR.
+ *                    These are set/cleared only if a generic interrupt handler is configured for unique 
+ *                    interrupts. Note, the bit set/cleared refers to the number of the generic interrupt 
+ *                    handler and not the actual linked interrupt that triggered on the assigned generic 
+ *                    handler.
+ *  1 Mar  2020:v2.02 Introduced concept of 'generic' interrupt ISRs to delink actual dgital interrupts 
+ *                    pins from a particular ISR.
  * 27 Feb 2020:v2.01  Further extension to the interrupt channel data structure ('interrupt_config_data')
  *                    to provide greater flexiblity per digital interrupt input.  
  *                    This version now allows each interrupt to be treated individually for 
@@ -30,9 +41,9 @@
  * 22 Feb 2020:v1.02  Layout work to program structure, including end user configuration tab
  * 20 Feb 2020:v1.01  Extensions to allow unique/nonunique interrupt handling. 
  * 13 Feb 2020:v1.00  Initial version, concepts and development.
- 
+ * ___________________________________________________________________________________________________
  * 
- * README...__________________________________________________________________________________________
+ * README..._________________________________________________________________________________________
  * This is a framework that can be used to manage and process any number of external
  * interrupts, from 1 up to the maximum number support by the microcontroller.
  * It works by using a queue into which triggered interrupts are placed, ready for
