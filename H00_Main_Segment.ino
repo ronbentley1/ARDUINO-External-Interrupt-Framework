@@ -1,4 +1,5 @@
-
+// Copyright (c) Ron D Bentley (UK), see copyright notice
+//
 void loop() 
 {int  interrupt;
 /*  The following section of code will allow interrupts to be processed at each loop cycle

@@ -1,5 +1,6 @@
-// ******* TESTING HISTORY, current version *********
- /* 
+// Copyright (c) Ron D Bentley (UK), see copyright notice
+//
+/* 
   * Version 2.03 Testing Strategy:
   * 1.  To test the correct setting and clearing of generic interrupt flags were these are configured 
   *     as for 'unique' entries in the IQ.

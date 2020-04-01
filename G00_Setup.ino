@@ -1,3 +1,5 @@
+// Copyright (c) Ron D Bentley (UK), see copyright notice
+//
 void setup() {
   int input, interrupt_pin, pinmode_type, trigger_type;
   

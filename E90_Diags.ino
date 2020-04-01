@@ -1,3 +1,4 @@
+// Copyright (c) Ron D Bentley (UK), see copyright notice
 //
 //  Insert any diagnostic routines in this tab, and use 'diags_on' to switch
 //  them on/off (true/false)

@@ -1,3 +1,5 @@
+// Copyright (c) Ron D Bentley (UK), see copyright notice
+//
 //  This tab contains all of the routines to establish and maintain interrupt
 //  queue management in a queued framework.
 //

@@ -1,3 +1,5 @@
+// Copyright (c) Ron D Bentley (UK), see copyright notice
+//
 //  This tab contains the parameters available to configure the interrupt handlers and associated
 //  supporting structures.
 

@@ -1,3 +1,5 @@
+// Copyright (c) Ron D Bentley (UK), see copyright notice
+//
 //  This tab provides the basis for developing applications that require
 //  multiple interrupts, occurring from inputs to digital pins.
 //  It is a shell to be used with whatever applications are required to have
