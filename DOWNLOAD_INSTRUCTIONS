@@ -4,7 +4,7 @@ The files to be downloaded are held in two github branches - the "master" and a 
 
 On your local computer (Windows 10):
 
-  1. Navigate to the sub branch ("Code-branch") under the master branch and locate the .ino file called
+  1. Navigate to the sub branch ("Arduino-Code-branch") under the master branch and locate the .ino file called
      something like "A00_Reminder_Framework_README_v1.03.ino".  
      
   2. Now create a folder under the ARDUINO IDE directory on your pc with the same name as this first ARDUINO sketch 
@@ -20,7 +20,7 @@ On your local computer (Windows 10):
   5. That should be it.  Fire up your IDE and select the folder "A00_Reminder_Framework_README_v1.03".
   
   Please do read the User Guide thoroughly to ensure you fully appreciate how the Framework operates.
-  The guide includes several examples that should clarify how it can be implemented.
+  The guide includes examples that should clarify how it can be implemented.
   
   
      
