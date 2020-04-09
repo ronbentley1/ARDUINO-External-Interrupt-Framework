@@ -13,7 +13,7 @@ void setup() {
 
   if (diags_on)
   {
-    Serial.begin(9600);
+    Serial.begin(115200);
   }
 
   //  establish the interrupt handler routines to the defined input pins

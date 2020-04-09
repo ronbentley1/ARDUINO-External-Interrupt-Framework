@@ -6,7 +6,7 @@
 //  corrupt the printing process. 
 //
 
-int print_IQ()
+void print_IQ()
 {int ptr, count;
   if (diags_on)
   {
@@ -45,12 +45,13 @@ int print_IQ()
     Serial.println("_______________________________");
     Serial.println("");
     Serial.flush();
-    return no_entry;
+    noInterrupts();
     initialisation_complete = true;   // can now allow interrupts to be processed
+    interrupts();
   }
 }
 
-int print_free_chain()
+void print_free_chain()
 {int ptr, count;
 if (diags_on)
   {
@@ -87,7 +88,8 @@ if (diags_on)
     Serial.println("_______________________________");
     Serial.println("");
     Serial.flush();
-    return no_entry;
+    noInterrupts();
     initialisation_complete = true;   // can now allow interrupts to be processed
+    interrupts();
   }
 }
