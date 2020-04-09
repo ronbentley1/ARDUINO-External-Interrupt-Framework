@@ -25,22 +25,51 @@ void loop()
     2.  if no interrupt is returned (none in the IQ) then all of the above variables will be set
         to 'no_interrupt_request'.
 */
-
 do { // Keep processing interrupts whilst there are interrupts in the queue..
-    interrupt = scan_IQ();  //  get the next interrupt in IQ if there is one.
-     if (interrupt != no_interrupt_request)
-      { /*  Process this interrupt request. 'interrupt' defines the 
-            generic interrupt number that triggered.  Other variables (see above) give all
-            other interrupt atrributes if required 
-            Insert whatever code appropriate here, if any, 
-            when not processing an interrupt request  */
-
-      }
+   interrupt = scan_IQ();  //  get the next interrupt in IQ if there is one.
+   if (interrupt != no_interrupt_request)
+   {/*  
+    Process this interrupt request. 'interrupt' defines the 
+    generic interrupt number that triggered.  Other variables 
+    (see above) give all other interrupt atrributes if required 
+    Insert whatever code appropriate here, if any, 
+    when not processing an interrupt request  */
+    switch (int_number)
+    {
+      case 0: // external interrupt 0
+        // place your code for this interrupt number here...
+        
+        break;
+      case 1: // external interrupt 1
+        // place your code for this interrupt number here...
+        
+        break;
+      case 2: // external interrupt 2
+        // place your code for this interrupt number here...
+        
+        break;
+      case 3: // external interrupt 3
+        // place your code for this interrupt number here...
+        
+        break;
+      case 4: // external interrupt 4
+        // place your code for this interrupt number here...
+        
+        break;
+      case 5: // external interrupt 5
+        // place your code for this interrupt number here...
+        
+        break;
+      default:
+        break;
     }
+   }
+  }
   while (interrupt != no_interrupt_request);
-  /*  No interrupts left in the queue, so do other things....
-      Insert whatever code appropriate here, if any, 
-      when not processing an interrupt request. */
+  /*  
+  No interrupts left in the queue, so do other things....
+  Insert whatever code appropriate here, if any, 
+  when not processing an interrupt request. */
 
 
 
