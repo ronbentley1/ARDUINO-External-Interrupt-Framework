@@ -21,6 +21,9 @@
  * 
  * Version History    _________________________________________________________________________________
  *
+ *18 Apr 2020:v2.03.1 Point release - corrected '#define millis_max' in E10_Interrupt Handlers tab, which  
+ *                    was incorrectly set for 64 bit operation.  Corect value is 0xffffffff, which
+ *                    refects 32 bit long unsigned integer architecture.
  * 4 Mar  2020:v2.03  Efficiency improvements regarding scanning IQ for existing unique interrupts.  New                    
  *                    approach no longer scans chain, but uses binary flags, one for each generic interrupt.
  *                    These are set/cleared only if a generic interrupt handler is configured for unique 

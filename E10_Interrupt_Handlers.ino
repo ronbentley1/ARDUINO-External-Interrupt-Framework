@@ -19,7 +19,7 @@ volatile bool initialisation_complete  = false;  // used by interrupt handlers t
 
 volatile long unsigned int millis_now, millis_elapsed;
 
-#define millis_max  0xffffffffffffffff  //  max value the millis function will achieve before cycling back to 0
+#define millis_max  0xffffffff  //  max value the millis function will achieve before cycling back to 0
 
 //
 //  Each interrupt handler will call this function (when triggered) passing it the its associated interrupt 
