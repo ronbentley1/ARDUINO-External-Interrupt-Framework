@@ -20,12 +20,12 @@ bool  diags_on = true;  //  set to 'true' for diagnostics, otherwise 'false' for
 
 volatile int interrupt_config_data[max_digital_inputs][7]=
 {
-active,     21,     INPUT_PULLUP,   RISING,     false,           15,           0, // generic interrupt handler 0 entries
-active,     20,     INPUT_PULLUP,   RISING,     false,           15,           1, // generic interrupt handler 1 entries
-active,     19,     INPUT_PULLUP,   RISING,     false,           15,           2, // generic interrupt handler 2 entries
-active,     18,     INPUT_PULLUP,   RISING,     false,           15,           3, // generic interrupt handler 3 entries
-active,      2,     INPUT_PULLUP,   RISING,     false,           15,           4, // generic interrupt handler 4 entries
-active,      3,     INPUT_PULLUP,   RISING,     false,           15,           5};// generic interrupt handler 5 entries
+active,     21,         INPUT,      RISING,     false,           15,           0, // generic interrupt handler 0 entries
+active,     20,         INPUT,      RISING,     false,           15,           1, // generic interrupt handler 1 entries
+active,     19,         INPUT,      RISING,     false,           15,           2, // generic interrupt handler 2 entries
+active,     18,         INPUT,      RISING,     false,           15,           3, // generic interrupt handler 3 entries
+active,      2,         INPUT,      RISING,     false,           15,           4, // generic interrupt handler 4 entries
+active,      3,         INPUT,      RISING,     false,           15,           5};// generic interrupt handler 5 entries
 /*  ^        ^             ^           ^           ^              ^            ^
     |        |             |           |           |              |            |
  active    digital      pinMode       interrupt  unique/      interrupt     interrupt number
